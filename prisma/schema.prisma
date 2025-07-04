@@ -14,5 +14,4 @@ model Todo {
   completed Boolean @default(false)
   createdAt DateTime @default(now())
   userId  String 
-//   author   User      @relation(fields: [authorId], references: [id])
   }

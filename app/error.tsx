@@ -1,8 +1,6 @@
-'use client' // Error boundaries must be Client Components
+'use client'
  
 import { Button } from '@/components/ui/button'
-import Image from 'next/image'
-import { useEffect } from 'react'
  
 export default function Error({
   error,
@@ -11,10 +9,7 @@ export default function Error({
   error: Error & { digest?: string }
   reset: () => void
 }) {
-  useEffect(() => {
-    // Log the error to an error reporting service
-    console.error(error)
-  }, [error])
+
  
   return (
 <section className="bg-white dark:bg-gray-900 h-screen pt-20">

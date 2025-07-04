@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { Button } from './ui/button'
-import { SquarePen, Trash } from 'lucide-react'
+import { Trash } from 'lucide-react'
 import Spinner from './Spinner'
 import { ITodo } from '@/interfaces'
 import { deleteTodoActions, updateTodoActions } from '@/actions/todo.actions'

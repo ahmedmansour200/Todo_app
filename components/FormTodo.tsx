@@ -8,7 +8,6 @@ import { Label } from './ui/label'
 import Spinner from './Spinner'
 import { Button } from './ui/button'
 import { UseFormReturn } from 'react-hook-form'
-import { ITodo } from '@/interfaces'
 
 interface IFormTodoProps {
     onSubmit:  (data: {title: string;completed: boolean;body?: string | undefined;}) => Promise<void>;
