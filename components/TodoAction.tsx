@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 import { Trash } from 'lucide-react'
 import Spinner from './Spinner'
 import { ITodo } from '@/interfaces'
-import { deleteTodoActions, updateTodoActions } from '@/actions/todo.actions'
+import { deleteTodoActions } from '@/actions/todo.actions'
 import { EditTodoForm } from './EditTodoForm'
 
 const TodoAction = ({todo} : {todo:ITodo}) => {

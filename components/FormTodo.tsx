@@ -11,8 +11,7 @@ import { UseFormReturn } from 'react-hook-form'
 
 interface IFormTodoProps {
     onSubmit:  (data: {title: string;completed: boolean;body?: string | undefined;}) => Promise<void>;
-    form: UseFormReturn<{title: string; completed: boolean; body?: string | undefined;}, any,
-     {title: string;completed: boolean;body?: string | undefined}>;
+    form: UseFormReturn<{ title: string; completed: boolean; body?: string | undefined }, unknown, { title: string; completed: boolean; body?: string | undefined }>;
     loading: boolean;
 }
 const FormTodo = ({onSubmit, form , loading}:IFormTodoProps) => {
