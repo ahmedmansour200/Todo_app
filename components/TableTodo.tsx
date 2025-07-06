@@ -16,7 +16,7 @@ const TableTodo = ({todo} : {todo:ITodo[]}) => {
    <Table>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px]">ID</TableHead>
+          <TableHead className="w-[100px]">Counter</TableHead>
           <TableHead>Title</TableHead>
           <TableHead>Body</TableHead>
           <TableHead className="text-right">Completed</TableHead>
@@ -24,9 +24,9 @@ const TableTodo = ({todo} : {todo:ITodo[]}) => {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {todo && todo.map((todo) => (
+        {todo && todo.map((todo, index) => (
           <TableRow key={todo.id}>
-            <TableCell className="font-medium">{todo.id}</TableCell>
+            <TableCell className="font-medium">{index + 1}</TableCell>
             <TableCell>{todo.title}</TableCell>
             <TableCell >
                 <p className="text-sm text-muted-foreground ">
@@ -46,7 +46,7 @@ const TableTodo = ({todo} : {todo:ITodo[]}) => {
       <TableFooter>
         <TableRow>
           <TableCell colSpan={4}>Total</TableCell>
-          <TableCell className="text-end">{todo.length}</TableCell>
+          <TableCell className="text-end">{todo.length > 0 ? todo.length : "The Empty Todo"}</TableCell>
         </TableRow>
       </TableFooter>
     </Table>

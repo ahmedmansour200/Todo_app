@@ -2,33 +2,23 @@ import { SignIn } from '@clerk/nextjs'
 
 export default function Page() {
   return(
-<div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 px-4">
-  <div className="w-full max-w-md flex flex-col justify-center items-center bg-white dark:bg-gray-800 shadow-2xl rounded-3xl p-10 border border-gray-200 dark:border-gray-700">
-    <div className="text-center mb-8">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2 tracking-tight">
-        Welcome Back!
-      </h1>
-      <p className="text-gray-500 dark:text-gray-300 text-base">
-        Sign in to your Todo App account
-      </p>
-    </div>
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col justify-center items-center gap-2">
+      <h1 className="text-2xl font-bold text-center">Hello 😚</h1>
+      <p className="text-center text-gray-500">To use the app you need to sign in</p>
       <SignIn
         appearance={{
           elements: {
-            card: "shadow-none bg-black p-20  dark:bg-gray-800 rounded-3xl border border-gray-200 dark:border-gray-700",
+            // card: "bg-blue-50 dark:bg-gray-800 shadow-lg rounded-3xl p-8",
             headerTitle: "hidden",
             headerSubtitle: "hidden",
-            formButtonPrimary: "bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg mt-4",
-            formFieldInput: "border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white",
-            footerAction: "text-sm text-gray-500 dark:text-gray-400 mt-6",
-          },
+            // formButtonPrimary: "bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg mt-4",
+            // formFieldInput: "border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white",
+            footerAction: "hidden",
+          }
         }}
         afterSignOutUrl="/"
       />
     </div>
-  </div>
-</div>
 
   ) 
   
