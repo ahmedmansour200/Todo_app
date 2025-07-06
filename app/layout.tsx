@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/provider/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
-import { dark, neobrutalism, shadesOfPurple } from "@clerk/themes";
+import { dark} from "@clerk/themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
