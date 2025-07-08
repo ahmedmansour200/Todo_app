@@ -87,17 +87,16 @@ To set up and run this project locally, follow these steps:
 ```
 .
 ├── public/
-├── src/
-│   ├── app/                    # Next.js App Router
-│   │   ├── (auth)/             # Authentication routes (e.g., sign-in, sign-up)
-│   │   ├── api/                # API routes
-│   │   └── page.tsx            # Main application page
-│   ├── components/             # Reusable React components
-│   ├── lib/
-│   │   ├── mongodb.ts          # MongoDB connection setup
-│   │   └── utils.ts            # Utility functions
-│   └── models/
-│       └── Todo.ts             # Mongoose Todo schema
+├── app/                    # Next.js App Router
+│      ├── (auth)/             # Authentication routes (e.g., sign-in, sign-up)
+│      ├── api/                # API routes
+│      └── page.tsx            # Main application page
+│── components/             # Reusable React components
+│── lib/
+│── mongodb.ts          # MongoDB connection setup
+│── utils.ts            # Utility functions
+│── models/
+│         └── Todo.ts             # Mongoose Todo schema
 ├── .env.local
 ├── next.config.js
 ├── package.json
