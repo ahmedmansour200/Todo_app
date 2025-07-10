@@ -53,7 +53,7 @@ const FormTodo = ({onSubmit, form , loading}:IFormTodoProps) => {
       </div>
         <div className="flex justify-flex-start items-center">
           {loading ? <Spinner/> : 
-            <Button type="submit">Submit</Button>
+            <Button type="submit">Save</Button>
           }  
         </div>
       </form>

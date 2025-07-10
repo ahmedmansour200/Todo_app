@@ -10,12 +10,12 @@ const Navbar = () => {
            <SignedOut>
             <div className="flex items-center gap-2">
               <SignInButton>
-                <Button variant={"secondary"} className="text-xs first-letter:uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <Button variant={"secondary"}>
                     Sign In
                 </Button>
               </SignInButton>
               <SignUpButton>
-                <Button variant={"secondary"} className="text-xs first-letter:uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <Button variant={"secondary"} >
                     Sign Up
                 </Button>
               </SignUpButton>

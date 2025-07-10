@@ -10,7 +10,7 @@ export default async function Home(){
 
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 ">
       <main className="">
         <div className=" flex items-center justify mb-4">
       <AddTodoForm userId={userId}/>

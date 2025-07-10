@@ -19,7 +19,7 @@ const TodoAction = ({todo} : {todo:ITodo}) => {
       <div className="flex items-center justify-end gap-2">
             <EditTodoForm todo={todo} /> 
              <Button  onClick={() => handleDelete(todo.id as string)} size={'icon'} variant="destructive">
-                   {loading ? <Spinner/> : <Trash size={16} color="red" />}  
+                   {loading ? <Spinner/> : <Trash size={16} />}  
             </Button>
         </div>
   )
